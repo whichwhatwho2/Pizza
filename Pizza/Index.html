@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Papa's Pizza</title>
+</head>
+
+
+<body>
+    <!-- Jumbotron Header -->
+    <div class="container" id="main">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Papa's Pizza</h1>
+            <p class="lead">Making awesome pizza since 1950</p>
+        </div>
+
+    <!-- Pizza Order Form -->
+    <form action="confirm.php" method="get" id="pizzaform">
+
+        <!-- Contact Information Fieldset -->
+        <fieldset class="form-group border p-2">
+            <legend>Contact Information</legend>
+
+        <!-- First Name -->
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                    <input type="text" class="form-control" id="fname"
+                       placeholder="Enter first name" name="fname">
+                <span class="err" id="err-fname">
+                    Please enter first name </span>
+            </div>
+
+        <!--Last Name -->
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" class="form-control" id="lname"
+                       placeholder="Enter last name" name="lname">
+                <span class="err" id="err-lname">
+                    Please enter last name</span>
+            </div><!-- END of Contact Information Fieldset -->
+
+        <!--Address-->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" rows="3" id="address"
+                          name="address"></textarea>
+            </div>
+        </fieldset>
+        <!-- Pickup or Delivery Fieldset -->
+        <fieldset class="form-group border p-2">
+            <legend>Pickup or Delivery</legend>
+        <!--Pickup Delivery Method -->
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input"
+                           name="method" value="pickup" checked="checked">Pickup
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input"
+                           name="method" value="delivery" checked="checked">Delivery
+                </label>
+            </div>
+            <span class="err" id="err-method">
+                Please select retrieval method </span>
+        </fieldset><!-- End Of Pickup or Delivery Fieldset -->
+
+        <!-- Toppings Fieldset -->
+        <fieldset class="form-group border p-2">
+            <legend>Toppings Selection</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                           value="peperoni" name="toppings[]">Peperoni
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                           value="sausage" name="toppings[]">Sausage
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                           value="pineapple" name="toppings[]">Pineapple
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"
+                           value="canadian-bacon" name="toppings[]">Canadian Bacon
+                </label>
+            </div>
+        </fieldset> <!-- End of Toppings Fieldset -->
+
+        <!-- Pizza Size Fieldset -->
+        <fieldset class="form-group border p-2">
+            <legend>Pizza Size</legend>
+            <div class="form-group">
+                <select id="size" class="form-control" name="size">
+                    <option value="none">Select a Size</option>
+                    <option value="small">Small (8")</option>
+                    <option value="medium">Medium (12")</option>
+                    <option value="Large">Large (14")</option>
+                    <option value="extra-large">Extra Large (24")</option>
+                </select>
+                <span class="err" id="err-size">
+                    Please select a size </span>
+            </div>
+
+        </fieldset> <!-- End of Size Fieldset -->
+
+        <button type="submit" id="submit" class="btn btn-primary btn-default">Submit</button>
+    </form><!-- END of Pizza Order Form -->
+    </div> <!-- end of class="container" -->
+
+    <footer>
+        <p> Thank you for visiting.</p>
+    </footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="pizza.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- -->

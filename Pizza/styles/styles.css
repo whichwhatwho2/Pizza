@@ -1,0 +1,59 @@
+
+
+body {
+    background-color: darkred;
+}
+
+.border {
+    border: 2px solid darkgreen!important;
+}
+
+.err {
+    color: darkred;
+    display: none;
+    /*visibility: hidden; */
+}
+
+h1 {
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+.jumbotron, #submit {
+    margin: 1vh;
+}
+
+legend {
+    color: darkgreen;
+    font-variant: small-caps;
+}
+
+#main {
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+/* Dylan's Style for Validation
+
+.text-error{
+    border: 1px solid red;
+}
+
+.error::after{
+    content: " * required";
+    color:red;
+}
+if(!validateText(bearNameNode)){
+        bearNameNode.classList = "text-error";
+        bearNameNode.parentElement.classList="error";
+        isValid = false;
+    } else {
+        bearNameNode.classList = "";
+        bearNameNode.parentElement.classList="";
+    }
+
+ */
